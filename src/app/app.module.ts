@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NamesGupos } from './utl/grupos.component';
+import { IdgsComponent } from './utl/idgs/idgs.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NamesGupos,
+    IdgsComponent
   ],
   imports: [
     BrowserModule,
