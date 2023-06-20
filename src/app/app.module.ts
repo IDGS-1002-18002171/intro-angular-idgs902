@@ -10,27 +10,26 @@ import { MenuComponent } from './utl/menu/menu.component';
 import { FormsModule } from '@angular/forms';
 import { SumaComponent } from './utl/formularios/suma/suma.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { OperasBasComponent } from './utl/formularios/operas-bas/operas-bas.component';
-import {MatInputModule} from '@angular/material/input';
 
+import { DistanciaModule } from "./utl/tarea/distancia/distancia.module";
 @NgModule({
-  declarations: [
-    AppComponent,
-    NamesGupos,
-    IdgsComponent,
-    IricComponent,
-    MenuComponent,
-    SumaComponent,
-    OperasBasComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatInputModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        NamesGupos,
+        IdgsComponent,
+        IricComponent,
+        MenuComponent,
+        SumaComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        FormsModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        DistanciaModule
+    ]
 })
 export class AppModule { }
